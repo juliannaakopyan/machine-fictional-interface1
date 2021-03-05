@@ -1,0 +1,214 @@
+/* welcome to the style file of this project! */
+
+* {
+    transition: all ease .2s ;
+    position: absolute;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: deeppink;
+    top: 100px;
+    left: 100px;
+    border-radius: 50%;
+    border: 3px solid  rgb(12, 21, 160);
+    transform: rotate(20deg) scale(0.8, 1.5);
+
+    
+}
+.circle1 {
+    width: 30px;
+    height: 30px;
+    background-color: deeppink;
+    top: 200px;
+    left: 100px;
+    border-radius: 50%;
+    border: 3px solid  rgb(12, 21, 160);
+    transform: rotate(20deg) scale(0.8, 1.5);
+}
+
+.circle2 {
+    width: 30px;
+    height: 30px;
+    background-color: deeppink;
+    top: 300px;
+    left: 100px;
+    border-radius: 50%;
+    border: 3px solid  rgb(12, 21, 160);
+    transform: rotate(20deg) scale(0.8, 1.5);
+}
+
+.circlebig {
+    width: 200px;
+    height: 200px;
+    background: rgb(12,21,160);
+background: linear-gradient(90deg, rgba(12,21,160,0) 0%, rgba(255,0,151,0.9869135154061625) 100%);
+    top: 200px;
+    left: 500px;
+    border-radius: 50%;
+    animation: rotate-circle 1s infinite alternate;
+}
+
+.circlebig1 {
+    width: 200px;
+    height: 200px;
+    background: rgb(12,21,160);
+background: linear-gradient(90deg, rgba(12,21,160,0) 0%, rgba(255,0,151,0.9869135154061625) 100%);
+    top: 500px;
+    left: 500px;
+    border-radius: 50%;
+    animation: rotate-circle 1s infinite alternate;
+}
+
+.circle-4 {
+    width: 100px;
+    height: 100px;
+    background-color:   rgb(12,21,160);
+    top: 100px;
+    left: 1000px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 27px 1px rgba(255,0,151,0.63); 
+box-shadow: 10px 10px 27px 1px rgba(255,0,151,0.63);
+transform: skew(5deg);
+}
+
+.circle-5 {
+    width: 100px;
+    height: 100px;
+    background-color:  rgb(12,21,160);
+    top: 300px;
+    left: 1000px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 27px 1px rgba(255,0,151,0.63); 
+box-shadow: 10px 10px 27px 1px rgba(255,0,151,0.63);
+transform: skew(5deg);
+}
+
+.circle-6 {
+    width: 100px;
+    height: 100px;
+    background-color:   rgb(12,21,160);
+    top: 500px;
+    left: 1000px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 27px 1px rgba(255,0,151,0.63); 
+box-shadow: 10px 10px 27px 1px rgba(255,0,151,0.63);
+transform: skew(5deg);
+}
+
+.square11 {
+    width: 100px;
+    height: 300px;
+    background: rgb(12,21,160);
+background: linear-gradient(90deg, rgba(12,21,160,1) 0%, rgba(255,0,151,0.9869135154061625) 100%);
+    top: 500px;
+    left: 100px;
+}
+
+.elipse{
+    width: 100px;
+    height: 30px;
+    background-color: deeppink;
+    top: 500px;
+    left: 100px;
+    border-radius: 50%;
+    animation: move 1s infinite alternate;
+}
+
+.square12 {
+    width: 100px;
+    height: 300px;
+    background: rgb(12,21,160);
+    background: linear-gradient(90deg, rgba(12,21,160,0.5275297619047619) 0%, rgba(255,0,151,0.9869135154061625) 100%);
+    top: 500px;
+    left: 300px;
+}
+
+.elipse1{
+    width: 100px;
+    height: 30px;
+    background-color: deeppink;
+    top: 500px;
+    left: 300px;
+    border-radius: 50%;
+    animation: move 1s infinite alternate;
+}
+
+.square1 {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    top: 500px;
+    left: 800px;
+    opacity: 0.5;
+}
+
+.square1:hover{
+    filter: blur(20px);
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    top: 700px;
+    left: 800px;
+    opacity: 0.5;
+}
+
+.square2:hover{
+    filter: blur(20px);
+}
+
+.square3 {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    top: 300px;
+    left: 800px;
+    opacity: 0.5;
+}
+
+.square3:hover{
+    filter: blur(20px);
+}
+
+
+@keyframes rotate-circle {
+    from {
+        transform:rotate(0deg)
+    } to {
+        transform:rotate(360deg)
+    }
+}
+
+
+@keyframes move {
+    from {
+        top: 500px;
+    } to {
+        top: 750px;
+    }
+}
+
+@keyframes blur {
+    from {
+        filter: blur(1px);
+    } to {
+        filter: blur(20px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(15deg);
+    }
+}
